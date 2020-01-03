@@ -1,0 +1,50 @@
+﻿@model CSkins.Models.Skin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link href="~/css/HomeStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Skin/Index">Skins</a>
+        <a href="/Skin/AddASkin">Add a Skin</a>
+        <a href="/Skin/Delete">Delete a Skin</a>
+    </nav>
+
+    <div id="container">
+
+        <div class="header">
+            <h4>Daily Skin</h4>
+        </div>
+
+
+        <div id="imgbox">
+            <img src="/images/dragonlore.jpg" />
+        </div>
+
+        <div class="header">
+            <h4>Dude Review</h4>
+        </div>
+
+        <div id="reviews">
+            <p>
+                <strong>James</strong>: Never had a good match with this skin.
+            </p>
+        </div>
+
+
+    </div>
+
+    <footer>© 2020 CSkins</footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+﻿@model CSkins.Models.Review
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Update";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete a review</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link href="~/css/CRUDStyle.css" rel="stylesheet" />
+</head>
+
+<div class="box">
+    <h3>Update</h3>
+    <h4>Review</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Update">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Content" class="control-label"></label>
+                    <input asp-for="Content" class="form-control" />
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="SkinId" value="@Model.SkinId" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <a href="/Home/Index">Home</a>
+    <a href="/Skin/Index">Skins</a>
+</nav>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

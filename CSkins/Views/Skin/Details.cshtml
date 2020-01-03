@@ -1,0 +1,84 @@
+﻿@model CSkins.Models.Skin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link href="~/css/ReviewStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="coffeereview">
+        <article>
+            <div id="topname">
+                <span>@Model.Name</span>
+                <p> <span>@Model.Gun</span></p>
+            </div>
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <p><span><img src="@Model.ImageUrl" /></span></p>
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <p id="description">Description:<span>@Model.Description</span></p>
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <div id="review">
+                @foreach (var review in Model.Reviews)
+                {
+                    <article>
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <p>@review.Content</p>
+                        <p><a class="butn" href="/Review/Delete/@review.Id"><input type="submit" value="Delete Review" class="btn btn-default" /></a></p>
+                        <p><a class="butn" href="/Review/Update/@review.Id"><input type="submit" value="Update Review" class="btn btn-default" /></a></p>
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                        <hr />
+                    </article>
+                }
+            </div>
+            <hr />
+        </article>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <div id="writereview">
+            <p><a class="butn" href="/Review/CreateBySkinId/@Model.Id"><input type="submit" value="Write a Review" class="btn btn-default" /></a></p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Skin/Index">Coffees</a>
+        <a href="/Skin/AddACoffee">Add a Coffee</a>
+        <a href="/Skin/Delete">Delete a Coffee</a>
+    </nav>
+
+    <footer>
+        &copy; 2020 CSkins
+    </footer>
+
+</body>
+</html>
