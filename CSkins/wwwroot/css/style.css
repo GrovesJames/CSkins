@@ -1,0 +1,108 @@
+﻿* {
+    font-family: 'Candara', 'Impact', 'Courier New','Times New Roman', 'Times', 'serif';
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/images/cofff.jpg);
+    background-repeat: repeat-y repeat-x;
+    background-size: 72em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    padding: .5em;
+    color: #fff;
+    text-align: center;
+}
+
+
+#coffees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 0em;
+    grid-row-gap: 2em;
+    padding: 1em;
+    margin: 1rem;
+}
+
+    #coffees img {
+        max-width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #e4c271;
+        border-radius: 25px;
+    }
+
+        #coffees img:hover {
+            transform: scale(1.5);
+        }
+
+@media screen and (max-width: 40em) {
+    #coffees {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+        width: 60vw;
+        min-width: 22em;
+        margin: 1em auto;
+    }
+}
+
+@media screen and (max-width: 25em) {
+    #coffees {
+        width: auto;
+        min-width: unset;
+    }
+}
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: #e4c271;
+    border: 3px solid #000;
+}
+
+    nav a {
+        padding: 1em 2em;
+        text-decoration: none;
+        color: #000;
+    }
+
+        nav a:hover {
+            background: #89560a;
+        }
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #e4c271;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+    border: 3px solid #000;
+}
+
+h1 {
+    text-align: center;
+    color: #e4c271;
+    margin-top: 1rem;
+}

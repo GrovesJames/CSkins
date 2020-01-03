@@ -1,0 +1,55 @@
+﻿@model CSkins.Models.Review
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Write a review</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+    <link href="~/css/CRUDStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="/Home/Index">Home</a>
+        <a href="/Skin/Index">Skins</a>
+    </nav>
+
+    <div class="box">
+        <h4>Write a Review!</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Content" class="control-label"></label>
+                        <input asp-for="Content" class="form-control" />
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="CoffeeId" value="@ViewBag.SkinId" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <a asp-action="Skin/Index/"></a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>
