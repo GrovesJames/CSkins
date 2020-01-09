@@ -38,7 +38,7 @@ h2, h3 {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border: 5px solid #e4c271;
+        border: 5px solid #596275;
         border-radius: 25px;
     }
 
@@ -74,7 +74,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background: #e4c271;
+    background: #596275;
     border: 3px solid #000;
 }
 
@@ -85,13 +85,13 @@ nav {
     }
 
         nav a:hover {
-            background: #89560a;
+            background: #596275;
         }
 
 footer {
     margin-top: 2em;
     margin-bottom: 1em;
-    background: #e4c271;
+    background: #596275;
     padding: 1em 0;
     text-align: center;
     position: sticky;
@@ -103,6 +103,6 @@ footer {
 
 h1 {
     text-align: center;
-    color: #e4c271;
+    color: #596275;
     margin-top: 1rem;
 }

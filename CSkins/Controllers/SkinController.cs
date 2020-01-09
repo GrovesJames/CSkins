@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CSkins.Controllers
 {
-    public class SkinsController : Controller
+    public class SkinController : Controller
     {
         IRepository<Skin> skinRepo;
-        public SkinsController(IRepository<Skin> skinsRepo)
+        public SkinController(IRepository<Skin> skinRepo)
         {
-            this.skinRepo = skinsRepo;
+            this.skinRepo = skinRepo;
         }
         public ViewResult Index()
         {
@@ -35,7 +35,7 @@ namespace CSkins.Controllers
         public ActionResult Create(Skin skin)
         {
             skinRepo.Create(skin);
-            return RedirectToAction("Index", "Skins");
+            return RedirectToAction("Skin", "Index");
         }
         [HttpGet]
         public ViewResult Delete()
@@ -48,7 +48,7 @@ namespace CSkins.Controllers
         {
             var coffee = skinRepo.GetById(id);
             skinRepo.Delete(coffee);
-            return RedirectToAction("Index", "Skins");
+            return RedirectToAction("Skin", "Index");
         }
     }
 }
