@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CSkins.Migrations
 {
-    public partial class Initialmigration : Migration
+    public partial class Initialmigratio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
