@@ -74,7 +74,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background: #596275;
+    background: white;
     border: 3px solid #000;
 }
 
@@ -85,13 +85,13 @@ nav {
     }
 
         nav a:hover {
-            background: #596275;
+            background: #999;
         }
 
 footer {
     margin-top: 2em;
     margin-bottom: 1em;
-    background: #596275;
+    background: white;
     padding: 1em 0;
     text-align: center;
     position: sticky;

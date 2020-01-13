@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CSkins.Migrations
 {
     [DbContext(typeof(SkinContext))]
-    [Migration("20200109005352_Initial migratio")]
-    partial class Initialmigratio
+    [Migration("20200113000410_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

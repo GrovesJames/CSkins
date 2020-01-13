@@ -10,7 +10,7 @@
     border-radius: 25px;
     margin-left: 25%;
     margin-right: 20%;
-    margin-top: 10%;
+    margin-top: 0;
     margin-bottom: 5%;
 }
 
@@ -19,17 +19,13 @@
     color: black;
     text-align: center;
     font-size: 2rem;
-    background: #596275;
-    border-radius: 25px;
 }
 
 h4 {
     color: black;
     text-align: center;
     font-size: 2rem;
-    background: #596275;
-    border: 3px solid #000;
-    border-radius: 25px;
+    margin: 0;
 }
 
 #reviews {
