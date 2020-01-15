@@ -35,7 +35,7 @@ namespace CSkins.Controllers
         public ActionResult Create(Review review)
         {
             reviewRepo.Create(review);
-            return RedirectToAction("Details", "Coffee", new { id = review.SkinId });
+            return RedirectToAction("Details", "Skin", new { id = review.SkinId });
         }
         [HttpGet]
         public ViewResult CreateByCoffeeId(int id)
@@ -53,7 +53,7 @@ namespace CSkins.Controllers
         public ActionResult Delete(Review review)
         {
             reviewRepo.Delete(review);
-            return RedirectToAction("Details", "Coffee", new { id = review.SkinId });
+            return RedirectToAction("Details", "Skin", new { id = review.SkinId });
         }
         [HttpGet]
         public ViewResult Update(int id)
@@ -65,7 +65,7 @@ namespace CSkins.Controllers
         public ActionResult Update(Review review)
         {
             reviewRepo.Update(review);
-            return RedirectToAction("Details", "Coffee", new { id = review.SkinId });
+            return RedirectToAction("Details", "Skin", new { id = review.SkinId });
         }
 
     }

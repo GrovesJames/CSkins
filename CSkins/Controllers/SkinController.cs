@@ -35,7 +35,7 @@ namespace CSkins.Controllers
         public ActionResult Create(Skin skin)
         {
             skinRepo.Create(skin);
-            return RedirectToAction("Skin", "Index");
+            return RedirectToAction("Index", "Skin");
         }
         [HttpGet]
         public ViewResult Delete()
@@ -48,7 +48,7 @@ namespace CSkins.Controllers
         {
             var coffee = skinRepo.GetById(id);
             skinRepo.Delete(coffee);
-            return RedirectToAction("Skin", "Index");
+            return RedirectToAction("Index", "Skin");
         }
     }
 }
