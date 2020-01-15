@@ -14,7 +14,7 @@ namespace CSkins.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=localhost;Database=CSkins;Trusted_Connection=True;";
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=CSkins;Trusted_Connection=True;";
 
             optionsBuilder.UseSqlServer(connectionString);
                           //.UseLazyLoadingProxies();
