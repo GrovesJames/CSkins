@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>AddACoffee</title>
+    <title>AddASkin</title>
     <link rel="stylesheet" type="text/css" href="~/css/style.css" />
     <link href="~/css/CRUDStyle.css" rel="stylesheet" />
 </head>
@@ -19,12 +19,12 @@
     <nav>
         <a href="/Home/Index">Home</a>
         <a href="/Skin/Index">Skins</a>
-        <a href="/Skin/AddACoffee">Add a Skin</a>
+        <a href="/Skin/AddASkin">Add a Skin</a>
         <a href="/Skin/Delete">Delete a Skin</a>
     </nav>
 
     <div class="box">
-        <h4>Coffee</h4>
+        <h4>Skins</h4>
         <hr />
         <div class="row">
             <div class="col-md-4">
@@ -36,7 +36,7 @@
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Gun" class="control-label">What is the gun the skin is for?</label>
+                        <label asp-for="Gun" class="control-label">What gun is the skin for?</label>
                         <input asp-for="Gun" class="form-control" />
                         <span asp-validation-for="Gun" class="text-danger"></span>
                     </div>
@@ -46,9 +46,9 @@
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <input type="hidden" name="ImageUrl" value="/images/Cupofcoffee.jpg" />
+                        <input type="hidden" name="ImageUrl" value="/images/case.png" />
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="createbtn">
                         <input type="submit" value="Create" class="btn btn-default" />
                     </div>
                 </form>
