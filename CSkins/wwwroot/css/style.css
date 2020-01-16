@@ -75,7 +75,7 @@ nav {
     flex-flow: row;
     justify-content: center;
     background: white;
-    border: 3px solid #000;
+    border: 1px solid #000;
 }
 
     nav a {
@@ -85,7 +85,8 @@ nav {
     }
 
         nav a:hover {
-            background: #999;
+            background: #F5F5F5;
+            transition: background 0.5s;
         }
 
 footer {
@@ -98,7 +99,7 @@ footer {
     bottom: 0;
     left: 40%;
     right: 40%;
-    border: 3px solid #000;
+    border: 1px solid #000;
 }
 
 h1 {
