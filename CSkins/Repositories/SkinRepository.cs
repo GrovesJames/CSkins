@@ -11,7 +11,7 @@ namespace CSkins.Repositories
     {
         public SkinRepository(SkinContext context) : base(context)
         {
-            // This ensures our base constructor gets run.
+            
         }
     }
 }

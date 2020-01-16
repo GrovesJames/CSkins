@@ -38,9 +38,9 @@ namespace CSkins.Controllers
             return RedirectToAction("Details", "Skin", new { id = review.SkinId });
         }
         [HttpGet]
-        public ViewResult CreateByCoffeeId(int id)
+        public ViewResult CreateBySkinId(int id)
         {
-            ViewBag.CoffeeId = id;
+            ViewBag.SkinId = id;
             return View();
         }
         [HttpGet]

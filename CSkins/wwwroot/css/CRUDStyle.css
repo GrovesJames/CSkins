@@ -1,8 +1,8 @@
 ﻿.box {
-    margin-top: 40%;
+    margin-top: 20%;
     margin-left: 40%;
     margin-right: 40%;
-    background: #e4c271;
+    background: grey;
     width: 200px;
     text-align: center;
 }
@@ -12,14 +12,18 @@ h3, h4 {
 }
 
 .cofbox {
-    margin-top: 40%;
-    margin-left: 40%;
-    margin-right: 40%;
-    background: #e4c271;
+    margin: 20% auto auto auto;
+    background: grey;
     width: 300px;
     text-align: center;
 }
-
+.deletebtns {
+    padding: 1em;
+    margin: auto;
+}
+#createbtn{
+    margin-top: 10%;
+}
 input {
     height: 50px;
     width: 150px;
