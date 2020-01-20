@@ -43,7 +43,7 @@ h2, h3 {
     }
 
         #coffees img:hover {
-            transform: scale(1.5);
+            transform: scale(1.25);
         }
 
 @media screen and (max-width: 40em) {
